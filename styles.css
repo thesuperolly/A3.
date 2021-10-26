@@ -1,3 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Zen Kurenaido', sans-serif;
+    background-color: #4AA6CA;
+}
+
 #map{
     margin: 0 auto;
+    border-radius: 2rem;
+    width: 390px;
+    height: 844px;
 }
+.marker {
+    background-image: url('point-marker.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    /* box-shadow: 4px 4px 4px; */
+}
+.mapboxgl-popup {
+    max-width: 200px;
+}
+.mapboxgl-popup-content {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+.mapboxgl-ctrl-attrib, .mapboxgl-ctrl-logo{
+    visibility: hidden;
+}
+#info {
+    display: table;
+    position: relative;
+    margin: 1rem auto 0 auto;
+    word-wrap: anywhere;
+    white-space: pre-wrap;
+    padding: 1rem;
+    border: none;
+    border-radius: 1rem;
+    font-size: 12px;
+    text-align: center;
+    color: #222;
+    background: #fff;
+    }
+
+    h1{
+        font-size: 3rem;
+        padding: 0 0 2rem 0;
+        text-align: center;
+        color: #fff ;
+    }
+    h3{
+        font-size: 1.5rem;
+    }
+    .container{
+        margin: 4rem auto;
+        width: clamp(390px, 60%, 640px);
+        background-color: #BD3393;
+        padding: 2rem;
+        border-radius: 3rem;
+        border: 4px solid #fff;
+    }
